@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Timetable Generator</title>
+</head>
+<body>
+    <h1>College Timetable Generator</h1>
+    <form action="/generate" method="post">
+        <label for="times">Enter time slots separated by commas (e.g., '9am-10am,10am-11am,11am-12pm'): </label>
+        <input type="text" name="times" required><br><br>
+        
+        <table>
+            <tr>
+                <th>Day / Time</th>
+                <th>9am-10am</th>
+                <th>10am-11am</th>
+                <th>11am-12pm</th>
+            </tr>
+            <tr>
+                <td>Monday</td>
+                <td><input type="text" name="Monday_9am-10am"></td>
+                <td><input type="text" name="Monday_10am-11am"></td>
+                <td><input type="text" name="Monday_11am-12pm"></td>
+            </tr>
+            <!-- Add similar rows for other days -->
+        </table>
+        
+        <input type="submit" value="Generate Timetable">
+    </form>
+</body>
+</html>
